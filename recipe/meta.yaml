@@ -20,6 +20,7 @@ requirements:
     - cross-python_{{ target_platform }}  # [build_platform != target_platform]
   host:
     - python
+    - pip
   run:
     - python
     - lark >=1.0.0
