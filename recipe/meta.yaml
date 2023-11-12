@@ -1,5 +1,5 @@
 {% set name = "bc-python-hcl2" %}
-{% set version = "0.3.51" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/bc-python-hcl2-{{ version }}.tar.gz
-  sha256: 15bfecbae882ead998dd9300737237a14e40dfd8c973e5c7de7b4c92040a010f
+  sha256: 72a438ceeced7d2e4c898e218f55a2a4aba7a887c1d64a4cf913837193c446b6
 
 build:
   skip: true  # [py<37]
   script: {{ PYTHON }} -m pip install . -vv
-  number: 3
+  number: 0
 
 requirements:
   build:
